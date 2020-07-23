@@ -374,7 +374,7 @@ header .courier {
 }
 .contact-form .contact-submit:hover {
   background-color: black;
-  color: lightblue;
+  color: pink;
   text-decoration: none;
 }
 
@@ -383,6 +383,9 @@ header .courier {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.form textarea {
+  padding: 10px;
 }
 
 @media screen and (min-width: 500px) {
