@@ -1,0 +1,40 @@
+.appear-left {
+    border-radius: 10%;
+    opacity: 0;
+    transition: opacity .5s .30s ease-out;
+    will-change: opacity;
+}
+
+.appear-right {
+    border-radius: 10%;
+    opacity: 0;
+    transition: opacity .5s .30s ease-out;
+    will-change: opacity;
+}
+
+.appear-left.is-visible, .appear-right.is-visible {
+    opacity: 1;
+    transform: translateX(0em);
+}
+
+@media screen and (min-width: 400px) {
+
+    .appear-left {
+        border-radius: 10%;
+        opacity: 0;
+        transform: translateX(-10em);
+        transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                    opacity .3s .25s ease-out;
+        will-change: transform, opacity;
+    }
+
+    .appear-right {
+        border-radius: 10%;
+        opacity: 0;
+        transform: translateX(8em);
+        transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                    opacity .3s .25s ease-out;
+        will-change: transform, opacity;
+    }
+
+}

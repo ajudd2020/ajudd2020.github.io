@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/f4d9ae5dbf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,7 +23,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item home-link">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -38,21 +39,86 @@
         </div>
     </nav>
     <!-- End Nav Bar-->
-    <header class="js-header"> 
+    <header class="js-header activate-on-scroll home"> 
         <h1 class="courier">Hey there! I'm Ana.</h1>
         <div class="cursive click js-hide" onclick="makeCircles(), changeText()">
             Click here to start the fun!
         </div>
-        <div class="courier intro-text js-appear hidden">
+        <div class="courier click intro-text js-appear hidden" onclick="reload()">
             Full-stack web developer 
         </div>
     </header>
-    <div class="bigDiv">
-        HELLO!!
+    <p class="about-me-header" id="about-me">Who is Ana Judd?</p>
+    <div class="about-me activate-on-scroll">
+        <div class="about-me-intro">
+            <img class="appear-left show-on-scroll pic-prop" src="images/pic.jpg" />
+            <div class="about-me-text appear-right show-on-scroll">
+                <h2>A Web-Dev Newbie</h2>
+                I haven't been in the web-dev game for long. But, since the day I typed my first "Hello World" I haven't been able to stop thinking about code.
+                I will be graduating from bootcamp in September of 2020, but that doesn't mean my coding journey is over.
+                I am <b>hard-working</b>, <b>reliable</b>, <b>honest</b>, and a <b>quick study</b>.
+            </div>
+        </div>
+        <div class="about-me-dev">
+            <div class="appear-left show-on-scroll">
+                <h2>With Some Skills</h2>
+            </div>
+            <div class="icons appear-right show-on-scroll">
+                <i class="fab fa-html5 skill-icon"></i>
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <i class="fab fa-sass skill-icon"></i>
+                <i class="fab fa-js skill-icon"></i>
+                <i class="fab fa-react skill-icon"></i>
+                <i class="fab fa-python skill-icon"></i>
+            </div>
+        </div>
+        <div class="about-me-dev-text">
+            <h5>
+                Current Skills: HTML CSS Sass JavaScript React Python
+            </h5>
+            <p>
+                Want me to learn something else? Just ask! 
+            </p>
+        </div>
     </div>
+    <p class="projects-header" id="projects">My Projects</p>
+    <div class="projects activate-on-scroll">
+        <div class="project-div show-on-scroll project-1">
+            <img class="project-pic" src="images/react.png" />
+            <a class="project-button" href="https://ajudd2020.github.io/SpanishFlashcards/" target="_blank">React App</a>
+        </div>
+        <div class="project-div show-on-scroll project-2">
+            <img class="project-pic" src="images/giphy.png"/>
+            <a class="project-button" href="https://ajudd2020.github.io/searchEngine/" target="_blank"> Giphy Search</a>
+        </div>
+        <div class="project-div show-on-scroll project-3">
+            <img class="project-pic" src="images/datenight.png" />
+            <a class="project-button" href="https://ajudd2020.github.io/datenightideas/" target="_blank">CSS Magic</a>
+        </div>
+    </div>
+    <div class="contact-form" id="contact">
+        <p class="contact-header contact activate-on-scroll">Contact Me</p>
+        <p class="contact-text">Want to work with me? Because I'd love to work with you!</p>
+        <form action="https://formspree.io/mnqglavr" method="POST" class="form">
+            <label for="name">Name: <input type="text" name="name" id="name" required="required"></label>
+            <label for="email">E-Mail: <input type="email" name="email" id="email" required="required"></label>
+            <label htmlFor="comments">Comments:</label>
+            <textarea name="comments" id="comments" rows="10" cols="40" placeholder="Enter Your Comments Here" required="required">
+            </textarea>
+            <button class="contact-submit" value="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-icon-container">
+            <a href="https://github.com/ajudd2020" target="_blank"><i class="fa fa-github footer-icon" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/anastasia-judd-4343a81b3/" target="_blank"><i class="fa fa-linkedin footer-icon" aria-hidden="true"></i></a>
+        </div>
+        <i class="fa fa-copyright copyright-icon" aria-hidden="true"></i>Anastasia Judd 2020
+    </footer>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripts/main.js"></script>
     <script src="scripts/canvas.js"></script>
     <script src="scripts/header.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

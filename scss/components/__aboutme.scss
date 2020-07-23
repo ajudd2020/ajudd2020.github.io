@@ -1,0 +1,118 @@
+@import '../base/_mixins';
+
+.skill-icon {
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    color: pink;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 5px 20px;
+    width: 40px;
+}
+
+.icons {
+    padding-top: 20px;
+    padding-bottom: 20px;;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-me {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+
+    .about-me-text{
+        margin-top: 20px;
+    }
+
+}
+
+.about-me-intro, .about-me-dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.about-me-header {
+    border-top: orange 8px solid;
+    @include section-header;
+    background-color: white;
+}
+
+.pic-prop {
+    padding: 10px;
+    display: block;
+    width: 80%;
+    max-width: 400px;
+}
+
+
+.about-me-dev-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.section-header{
+    border-bottom: orange 8px solid;
+    @include section-header;
+}
+
+@media screen and(min-width: 800px) {
+    .about-me-header {
+        padding-top: 100px
+    }
+
+    .about-me-dev {
+        flex-direction: row;
+        padding: 10px 100px 10px 100px;
+    }
+
+    .about-me-dev-text {
+        padding-bottom: 100px;
+    }
+
+    .pic-prop {
+        width: 50%;
+    }
+
+    .about-me-text, .icons {
+        padding-left: 50px;
+    }
+
+    .skill-icon {
+        margin: 15px;
+        padding: 10px;
+        font-size: 40px;
+        width: 60px;
+    }
+
+}
+
+@media screen and (min-width: 940px) {
+    .about-me-intro {
+        flex-direction: row;
+        padding: 10px 100px 10px 100px;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .skill-icon {
+        font-size: 60px;
+        width: 80px;
+    }
+
+}
+

@@ -92,8 +92,8 @@
                 var radius = 20; //Math.random() * 3 + 1;
                 dx = (Math.random() - 0.5) * 1;
                 dy = (Math.random() - 0.5) * 1;
-                var x = innerWidth/2;
-                var y = innerHeight/2;
+                var x = Math.random() * (innerWidth - radius * 2) + radius;
+                var y = Math.random() * (innerHeight - radius * 2) + radius;
                 circleArray.push(new Circle(x,y,dx,dy, radius))
             }
         }
