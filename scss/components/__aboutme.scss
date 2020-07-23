@@ -27,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 50px;
+    padding: 0 50px;
 
     .about-me-text{
         margin-top: 20px;
@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+
 }
 
 
@@ -47,6 +47,8 @@
     border-top: orange 8px solid;
     @include section-header;
     background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .pic-prop {
@@ -88,7 +90,7 @@
         width: 50%;
     }
 
-    .about-me-text, .icons {
+    .icons {
         padding-left: 50px;
     }
 
@@ -99,12 +101,21 @@
         width: 60px;
     }
 
+    .about-me{
+        padding: 50px;
+    }
+
+
 }
 
 @media screen and (min-width: 940px) {
     .about-me-intro {
         flex-direction: row;
         padding: 10px 100px 10px 100px;
+    }
+
+    .about-me-text {
+        padding-left: 50px;
     }
 }
 

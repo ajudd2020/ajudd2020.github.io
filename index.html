@@ -17,31 +17,31 @@
     </canvas>
     <!--Nav Bar-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <a class="navbar-brand">Ana Judd</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item home-link">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+            <li class="nav-item about-me-link">
+              <a class="nav-link" href="#about-me">About Me</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+            <li class="nav-item projects-link">
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+            <li class="nav-item contact-link">
+              <a class="nav-link" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
     </nav>
     <!-- End Nav Bar-->
-    <header class="js-header activate-on-scroll home"> 
+    <header class="js-header activate-on-scroll home" id="home"> 
         <h1 class="courier">Hey there! I'm Ana.</h1>
-        <div class="cursive click js-hide" onclick="makeCircles(), changeText()">
+        <div class="cursive click intro-text js-hide" onclick="makeCircles(), changeText()">
             Click here to start the fun!
         </div>
         <div class="courier click intro-text js-appear hidden" onclick="reload()">
@@ -81,19 +81,21 @@
             </p>
         </div>
     </div>
-    <p class="projects-header" id="projects">My Projects</p>
-    <div class="projects activate-on-scroll">
-        <div class="project-div show-on-scroll project-1">
-            <img class="project-pic" src="images/react.png" />
-            <a class="project-button" href="https://ajudd2020.github.io/SpanishFlashcards/" target="_blank">React App</a>
-        </div>
-        <div class="project-div show-on-scroll project-2">
-            <img class="project-pic" src="images/giphy.png"/>
-            <a class="project-button" href="https://ajudd2020.github.io/searchEngine/" target="_blank"> Giphy Search</a>
-        </div>
-        <div class="project-div show-on-scroll project-3">
-            <img class="project-pic" src="images/datenight.png" />
-            <a class="project-button" href="https://ajudd2020.github.io/datenightideas/" target="_blank">CSS Magic</a>
+    <div class="projects-div activate-on-scroll">
+        <p class="projects-header" id="projects">My Projects</p>
+        <div class="projects">
+            <div class="project-div show-on-scroll project-1">
+                <img class="project-pic" src="images/react.png" />
+                <a class="project-button" href="https://ajudd2020.github.io/SpanishFlashcards/" target="_blank">React App</a>
+            </div>
+            <div class="project-div show-on-scroll project-2">
+                <img class="project-pic" src="images/giphy.png"/>
+                <a class="project-button" href="https://ajudd2020.github.io/searchEngine/" target="_blank"> Giphy Search</a>
+            </div>
+            <div class="project-div show-on-scroll project-3">
+                <img class="project-pic" src="images/datenight.png" />
+                <a class="project-button" href="https://ajudd2020.github.io/datenightideas/" target="_blank">CSS Magic</a>
+            </div>
         </div>
     </div>
     <div class="contact-form" id="contact">

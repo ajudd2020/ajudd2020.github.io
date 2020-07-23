@@ -51,6 +51,21 @@ function addClass() {
             } else {
                 document.querySelector('.home-link').classList.remove('active');
             }
+            if (link.classList.value.includes("about-me")){
+                document.querySelector('.about-me-link').classList.add('active');
+            } else {
+                document.querySelector('.about-me-link').classList.remove('active');
+            }
+            if (link.classList.value.includes("projects")){
+                document.querySelector('.projects-link').classList.add('active');
+            } else {
+                document.querySelector('.projects-link').classList.remove('active');
+            }
+            if (link.classList.value.includes("contact")){
+                document.querySelector('.contact-link').classList.add('active');
+            } else {
+                document.querySelector('.contact-link').classList.remove('active');
+            }
         } else {
             link.classList.remove('active');
         }
