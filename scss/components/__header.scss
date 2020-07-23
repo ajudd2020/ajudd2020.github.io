@@ -1,0 +1,40 @@
+.canvasStyle {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    .js-appear.hidden {
+        display: none;
+    }
+    
+    
+    .js-hide.hidden {
+        display: none;
+    }
+    
+    .click {
+        cursor: pointer;
+    }
+    
+    .cursive {
+        font-family: cursive;
+    }
+    
+    .intro-text {
+        font-size: 20px;
+    }
+    
+    .courier {
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+

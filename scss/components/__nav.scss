@@ -1,0 +1,22 @@
+.nav-link {
+    color: black;
+    margin: 1px;
+}
+
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link:hover {
+    margin: 0px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.active {
+    border-radius: 5px;
+    background-color: pink;
+}

@@ -1,0 +1,14 @@
+@import '../base/_mixins';
+* {
+    @include set-page;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: aqua;
+    text-align: center;
+}

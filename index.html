@@ -11,9 +11,50 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
+    <canvas id="myCanvas" class="canvasStyle">
+        Your browser does not support the canvas element.
+    </canvas>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <a class="navbar-brand">Ana Judd</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- End Nav Bar-->
+    <header class="js-header"> 
+        <h1 class="courier">Hey there! I'm Ana.</h1>
+        <div class="cursive click js-hide" onclick="startCanvas(), changeText()">
+            Click here to start the fun!
+        </div>
+        <div class="courier intro-text js-appear hidden">
+            Full-stack web developer 
+        </div>
+    </header>
+    <div class="bigDiv">
+        HELLO!!
+    </div>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripts/canvas.js"></script>
+    <script src="scripts/header.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
