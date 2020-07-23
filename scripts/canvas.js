@@ -78,15 +78,25 @@
     var circleArray = [] ;
 
     function makeCircles() {
-        for (var i = 0; i < 1000; i++) {
-            var radius = 20; //Math.random() * 3 + 1;
-            dx = (Math.random() - 0.5) * 1;
-            dy = (Math.random() - 0.5) * 1;
-            var x = innerWidth/2;
-            var y = innerHeight/2;
-            circleArray.push(new Circle(x,y,dx,dy, radius))
+        if (canvas.width < 500) {
+            for (var i = 0; i < 100; i++) {
+                var radius = 20; //Math.random() * 3 + 1;
+                dx = (Math.random() - 0.5) * 1;
+                dy = (Math.random() - 0.5) * 1;
+                var x = innerWidth/2;
+                var y = innerHeight/2;
+                circleArray.push(new Circle(x,y,dx,dy, radius))
+            }
+        } else {
+            for (var i = 0; i < 1000; i++) {
+                var radius = 20; //Math.random() * 3 + 1;
+                dx = (Math.random() - 0.5) * 1;
+                dy = (Math.random() - 0.5) * 1;
+                var x = innerWidth/2;
+                var y = innerHeight/2;
+                circleArray.push(new Circle(x,y,dx,dy, radius))
+            }
         }
-
     }
 
 
