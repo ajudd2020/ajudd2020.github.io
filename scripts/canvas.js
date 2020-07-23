@@ -1,4 +1,4 @@
-function startCanvas() {
+
     var canvas = document.querySelector("#myCanvas")
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -21,7 +21,6 @@ function startCanvas() {
     window.addEventListener('click', function(event) {
         mouse.x = event.x;
         mouse.y = event.y;
-        makeCircles();
     });
 
     window.addEventListener('mousemove', function(event){
@@ -83,8 +82,8 @@ function startCanvas() {
             var radius = 20; //Math.random() * 3 + 1;
             dx = (Math.random() - 0.5) * 1;
             dy = (Math.random() - 0.5) * 1;
-            var x = mouse.x;
-            var y = mouse.y;
+            var x = innerWidth/2;
+            var y = innerHeight/2;
             circleArray.push(new Circle(x,y,dx,dy, radius))
         }
 
@@ -100,5 +99,3 @@ function startCanvas() {
     }
 
     animate();
-
-}
