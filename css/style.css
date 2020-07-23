@@ -323,7 +323,7 @@ header .courier {
   }
 
   .projects-div {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -387,7 +387,7 @@ header .courier {
 
 @media screen and (min-width: 500px) {
   .contact-form {
-    padding: 100px;
+    padding: 20px 50px 70px 50px;
   }
 }
 footer {
