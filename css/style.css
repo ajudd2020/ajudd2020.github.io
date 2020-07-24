@@ -68,6 +68,7 @@ header .letters {
   display: flex;
   justify-content: center;
   font-size: 45px;
+  flex-wrap: wrap;
 }
 header .word {
   padding: 0px 8px 8px 8px;
