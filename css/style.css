@@ -4,7 +4,11 @@
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: white;
+}
+
+.home-link {
+  color: white;
 }
 
 .navbar-brand {
@@ -379,11 +383,18 @@ header .courier {
 }
 .form textarea {
   padding: 10px;
+  height: 200px;
+  width: 300px;
 }
 
 @media screen and (min-width: 500px) {
   .contact-form {
     padding: 20px 50px 70px 50px;
+  }
+
+  .form textarea {
+    height: 300px;
+    width: 400px;
   }
 }
 footer {
