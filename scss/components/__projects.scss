@@ -20,13 +20,13 @@
 }
 
 .project-pic {
-    position: relative;
     padding: 5px;
     max-width: 300px;
     margin: 0px;
 }
 
 .project-div {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
