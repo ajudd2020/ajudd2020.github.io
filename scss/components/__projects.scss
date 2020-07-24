@@ -65,8 +65,7 @@
     margin: 20px;
     opacity: 0;
     //transform: translateX(-10em) rotateY(180deg);
-    transition: transform 1s .25s cubic-bezier(0.68, -0.55, 0.265, 1.55),
-                opacity .3s .25s ease-in;
+    transition: opacity .3s .25s ease-in;
     will-change: transform, opacity;
 }
 
@@ -101,5 +100,4 @@
     .project-1 {
         margin: 0px;
     }
-      
 }

@@ -323,7 +323,7 @@ header .courier {
 .project-1, .project-2, .project-3 {
   margin: 20px;
   opacity: 0;
-  transition: transform 1s 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s 0.25s ease-in;
+  transition: opacity 0.3s 0.25s ease-in;
   will-change: transform, opacity;
 }
 
