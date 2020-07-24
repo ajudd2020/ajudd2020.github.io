@@ -306,7 +306,7 @@ header .courier {
   text-align: center;
   border-radius: 5px;
   position: absolute;
-  top: 120px;
+  top: 70px;
   opacity: 0;
   padding: 5px;
   width: 120px;
@@ -335,6 +335,10 @@ header .courier {
   .project-pic {
     max-width: 400px;
     margin: 0px;
+  }
+
+  .project-button {
+    top: 110px;
   }
 }
 @media screen and (min-width: 920px) {
