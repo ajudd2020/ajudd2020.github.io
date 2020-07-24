@@ -1,5 +1,7 @@
 function reload () {
-    location.reload();
+    if (window.innerWidth > 500) {
+        location.reload();
+    }
 }
 
 
