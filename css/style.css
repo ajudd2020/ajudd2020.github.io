@@ -64,6 +64,17 @@ header {
 header .js-appear.hidden {
   display: none;
 }
+header .letters {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+}
+header .word {
+  padding: 0px 8px 8px 8px;
+}
+header .name {
+  padding-left: 8px;
+}
 header .js-hide.hidden {
   display: none;
 }
