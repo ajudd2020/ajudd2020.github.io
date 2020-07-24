@@ -64,15 +64,7 @@
 .project-1, .project-2, .project-3 {
     margin: 20px;
     opacity: 0;
-    transform: translateX(-10em) rotateY(180deg);
-    transition: transform 1s .25s cubic-bezier(0.68, -0.55, 0.265, 1.55),
-                opacity .3s .25s ease-in;
-    will-change: transform, opacity;
-}
-
-.project-4 {
-    opacity: 0;
-    transform: translateX(-10em) rotate(360deg);
+    //transform: translateX(-10em) rotateY(180deg);
     transition: transform 1s .25s cubic-bezier(0.68, -0.55, 0.265, 1.55),
                 opacity .3s .25s ease-in;
     will-change: transform, opacity;
@@ -110,18 +102,5 @@
     .project-1 {
         margin: 0px;
     }
-
-    .project-2 {
-        margin: 0px;
-        transform: translateX(-50em) rotateY(180deg);
-        transition-delay: .5s;
-    }
-    
-    .project-3 {
-        margin: 0px;
-        transform: translateX(-70em) rotateY(180deg);
-        transition-delay: 1s;
-    }
-    
-    
+      
 }
