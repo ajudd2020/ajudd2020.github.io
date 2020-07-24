@@ -3,6 +3,10 @@
   margin: 1px;
 }
 
+nav {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .navbar-brand {
   color: white;
 }
@@ -19,6 +23,11 @@
   background-color: pink;
 }
 
+@media screen and (min-width: 500px) {
+  nav {
+    background-color: transparent;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

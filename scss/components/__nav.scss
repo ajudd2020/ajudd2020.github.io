@@ -3,6 +3,9 @@
     margin: 1px;
 }
 
+nav {
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 .navbar-brand {
     color: white;
@@ -19,4 +22,10 @@
 .active {
     border-radius: 5px;
     background-color: pink;
+}
+
+@media screen and (min-width: 500px) {
+    nav {
+        background-color: transparent;
+    }
 }
