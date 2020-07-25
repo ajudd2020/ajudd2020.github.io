@@ -23,10 +23,15 @@ return (
     bound.top >= 0 && bound.left >=0
 )
 }
+var element = document.querySelector(".js-hide");
+var element2 = document.querySelector(".js-appear");
 
 function changeText() {
-    var element = document.querySelector(".js-hide");
     element.classList.toggle("hidden");
-    var element2 = document.querySelector(".js-appear");
     element2.classList.remove("hidden")
+}
+
+function newText() {
+    element.classList.remove("hidden");
+    element2.classList.toggle("hidden")
 }

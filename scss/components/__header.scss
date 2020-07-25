@@ -36,6 +36,9 @@ header {
     
     .click {
         cursor: pointer;
+        &:hover {
+            text-shadow: 1px 1px pink;
+        }
     }
     
     .cursive {

@@ -82,6 +82,9 @@ header .js-hide.hidden {
 header .click {
   cursor: pointer;
 }
+header .click:hover {
+  text-shadow: 1px 1px pink;
+}
 header .cursive {
   font-family: cursive;
 }
