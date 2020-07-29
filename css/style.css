@@ -171,7 +171,7 @@ header .courier {
 }
 
 .about-me-header {
-  border-top: orange 8px solid;
+  border-top: pink 8px solid;
   font-family: "Lato";
   font-size: 50px;
   text-align: center;
@@ -199,15 +199,6 @@ header .courier {
   justify-content: center;
   align-items: center;
   padding-bottom: 60px;
-}
-
-.section-header {
-  border-bottom: orange 8px solid;
-  font-family: "Lato";
-  font-size: 50px;
-  text-align: center;
-  padding-top: 60px;
-  margin-bottom: 0px;
 }
 
 @media screen and (min-width: 800px) {
@@ -268,7 +259,7 @@ header .courier {
   font-size: 50px;
   text-align: center;
   margin-bottom: 0px;
-  border-top: 10px orange solid;
+  border-top: 10px pink solid;
 }
 
 .projects-div {
@@ -355,7 +346,7 @@ header .courier {
   }
 }
 .contact-form {
-  border-top: 10px orange solid;
+  border-top: 10px pink solid;
   position: relative;
   padding: 10px;
   background-color: white;
@@ -408,7 +399,7 @@ header .courier {
   }
 }
 footer {
-  color: orange;
+  color: pink;
   text-align: center;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);

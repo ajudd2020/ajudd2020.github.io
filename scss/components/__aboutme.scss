@@ -44,7 +44,7 @@
 
 
 .about-me-header {
-    border-top: orange 8px solid;
+    border-top: pink 8px solid;
     @include section-header;
     background-color: white;
     padding-left: 10px;
@@ -69,11 +69,6 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 60px;
-}
-
-.section-header{
-    border-bottom: orange 8px solid;
-    @include section-header;
 }
 
 @media screen and(min-width: 800px) {
