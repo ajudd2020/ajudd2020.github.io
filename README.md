@@ -1,4 +1,4 @@
-# ajudd2020.github.io
+ajudd2020.github.io
 
 # Welcome to my portfolio! 
 
